@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- ✅ Navigation Bar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="max-w-5xl mx-auto flex justify-between">
+            <h1 class="text-2xl font-bold text-gray-900">Usman Dev</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-black">Home</a></li>
+                <li><a href="blog.html" class="text-gray-600 hover:text-black font-bold">Blog</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-black">About</a></li>
+                <li><a href="contact.html" class="text-gray-600 hover:text-black">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ✅ Blog Post Content -->
+    <div class="max-w-3xl mx-auto mt-10 bg-white p-6 shadow-lg rounded-lg">
+        <h1 class="text-4xl font-bold text-gray-900">My First Blog Post</h1>
+        <p class="text-gray-600 mt-4">Published on March 13, 2025</p>
+        <img src="blog1.jpg" alt="Blog Image" class="w-full rounded-lg mt-6">
+        <p class="mt-4 text-lg">
+            This is my first blog post! I'm excited to share my thoughts on web development and programming. Stay tuned for more posts!
+        </p>
+    </div>
+
+</body>
+</html>
