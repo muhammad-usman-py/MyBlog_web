@@ -99,6 +99,16 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+/* ✅ About Page Styles */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ✅ Contact Page Styles */
 form {
     display: flex;
     flex-direction: column;
