@@ -307,3 +307,87 @@ form {
     margin: auto;
 }
 
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Contact Container */
+.contact-container {
+    width: 50%;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Two-Column Layout */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Message Box */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+button {
+    background: #6f42c1;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #563d7c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+}
+
