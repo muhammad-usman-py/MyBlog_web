@@ -5,3 +5,74 @@
 </div>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: For extra styles -->
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- ✅ A. Navigation Bar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="max-w-5xl mx-auto flex justify-between">
+            <h1 class="text-2xl font-bold text-gray-900">My Blog</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-black">Home</a></li>
+                <li><a href="blog.html" class="text-gray-600 hover:text-black">Blog</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-black">About</a></li>
+                <li><a href="contact.html" class="text-gray-600 hover:text-black">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ✅ B. Hero Section (Welcome Section) -->
+    <section class="text-center py-20 bg-gray-900 text-white">
+        <h1 class="text-5xl font-bold">Hey, I'm Usman</h1>
+        <p class="mt-4 text-lg">A passionate developer showcasing my work</p>
+        <a href="blog.html" class="mt-6 inline-block px-6 py-3 bg-blue-500 rounded-lg text-white">Read My Blog</a>
+    </section>
+
+    <!-- ✅ C. Featured Projects Section -->
+    <div class="max-w-5xl mx-auto mt-10 p-6">
+        <h2 class="text-4xl font-bold text-center text-gray-900">Featured Projects</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <!-- Project 1 -->
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <img src="project1.jpg" alt="Project 1" class="w-full rounded-lg">
+                <h3 class="text-2xl font-bold mt-4">Project One</h3>
+                <p class="text-gray-600 mt-2">Description of your project. What it does and how it works.</p>
+                <a href="#" class="text-blue-500 font-bold mt-2 inline-block">View Project →</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <img src="project2.jpg" alt="Project 2" class="w-full rounded-lg">
+                <h3 class="text-2xl font-bold mt-4">Project Two</h3>
+                <p class="text-gray-600 mt-2">Description of your second project.</p>
+                <a href="#" class="text-blue-500 font-bold mt-2 inline-block">View Project →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ D. Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="fixed bottom-4 right-4 px-4 py-2 bg-gray-800 text-white rounded-lg">
+        Toggle Dark Mode
+    </button>
+
+    <script>
+        document.getElementById("darkModeToggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+    <style>
+        body.dark { background: #121212; color: white; }
+    </style>
+
+</body>
+</html>
