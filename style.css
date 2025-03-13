@@ -222,3 +222,35 @@ button:hover {
 .social-links a:hover {
     color: #0056b3;
 }
+
+/* ✅ Social Links Styling */
+.social-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links a i {
+    font-size: 22px;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
