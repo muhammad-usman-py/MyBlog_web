@@ -26,21 +26,30 @@
 
     <!-- Contact Section -->
    <div class="contact-container">
-    <h1>Contact Me</h1>
-    <p>Feel free to reach out for collaborations or questions!</p>
+    <h2>Contact Us</h2>
+    <h1>Let's talk about <br> your project</h1>
+    <p>Drop us a line through the form below. Or start a chat in the bottom right corner of the screen.</p>
+    
+    <form action="#" method="POST">
+        <div class="form-row">
+            <input type="text" name="first_name" placeholder="First name" required>
+            <input type="text" name="last_name" placeholder="Last name" required>
+        </div>
+        <div class="form-row">
+            <input type="email" name="email" placeholder="Email address*" required>
+            <input type="tel" name="phone" placeholder="Phone number">
+        </div>
+        <textarea name="message" placeholder="Your message"></textarea>
 
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        <div class="checkbox">
+            <input type="checkbox" id="marketing" name="marketing">
+            <label for="marketing">I agree to receive other marketing communications.</label>
+        </div>
 
         <button type="submit">Send Message</button>
     </form>
+</div>
+
 
     <!-- Social Links -->
  <div class="social-section">
